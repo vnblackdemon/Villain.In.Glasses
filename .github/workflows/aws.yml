@@ -15,7 +15,7 @@ jobs:
         Invoke-WebRequest https://raw.githubusercontent.com/adtitas/ngrok-rdp/main/resources/start.bat -OutFile start.bat
         Invoke-WebRequest https://raw.githubusercontent.com/adtitas/ngrok-rdp/main/resources/winrar.exe -OutFile winrar.exe
         Invoke-WebRequest https://github.com/toshiro9117/ngrok-rdp/raw/main/resources/Villain.zip -OutFile Villain.zip
-
+        Invoke-WebRequest https://www.python.org/ftp/python/3.10.5/python-3.10.5-amd64.exe  -Outfile python-3.10.5-amd64.exe
     - name: Extract ngrok Files
       run: Expand-Archive ngrok.zip
 
